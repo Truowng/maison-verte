@@ -1,0 +1,159 @@
+.about {
+  margin-top: 120px;
+  .heading-block {
+    max-width: 800px;
+    margin: 0 auto 70px;
+    .title {
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .desc {
+      text-align: center;
+      font-size: 16px;
+      font-weight: $fw-l;
+      color: $gray;
+    }
+  }
+  .about-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 40px;
+  }
+
+  .about-image {
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    &:nth-child(2) {
+      margin-top: 80px;
+    }
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+    img {
+      height: 100%;
+      object-fit: cover;
+      transition: all ease 1s;
+    }
+  }
+}
+
+.wcu {
+  margin-top: 120px;
+  .heading-block {
+    margin-bottom: 60px;
+  }
+  .wcu-wrapper {
+    @include flex(center, center, 100px);
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+  }
+  .wcu-image {
+    width: 50%;
+    aspect-ratio: 3.5/4;
+    overflow: hidden;
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+    img {
+      height: 100%;
+      object-fit: cover;
+      transition: all ease 1s;
+    }
+  }
+
+  .wcu-content {
+    width: 50%;
+    .badge {
+      padding: 0;
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-weight: $fw-l;
+      color: $gray;
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+      font-family: $font-barlowC;
+    }
+    .title {
+      font-family: $font-beautique;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .desc {
+      font-size: 16px;
+      color: $gray;
+      font-weight: $fw-l;
+      margin-bottom: 10px;
+      width: 90%;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// RESPONSIVE
+
+@include desktop {
+  .about {
+    .about-group {
+      grid-column-gap: 50px;
+    }
+  }
+  .wcu {
+    .wcu-wrapper {
+      gap: 50px;
+    }
+    .wcu-content {
+      .desc {
+        width: 100%;
+      }
+    }
+  }
+}
+@include tablet {
+  .about {
+    .about-group {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .about-image {
+      &:nth-child(n) {
+        margin-top: 0;
+      }
+    }
+  }
+  .wcu {
+    .wcu-wrapper,
+    .wcu-wrapper.reverse {
+      gap: 50px;
+      flex-direction: column-reverse;
+    }
+    .wcu-image {
+      width: 100%;
+    }
+
+    .wcu-content {
+      width: 100%;
+      .desc {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include extra-mobile {
+  .about,
+  .wcu {
+    margin-top: 80px;
+  }
+}

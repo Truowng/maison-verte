@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <title>Product List</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-wrapper">
+          <a href="#" title="Jacayl" class="logo">
+            <img src="./assets/images/logo-white.svg" alt="Jacayl" />
+          </a>
+          <nav class="header-nav">
+            <button
+              class="btn menu-btn"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mobile-menu"
+              aria-controls="mobile-menu"
+            >
+              <img src="./assets/images/menu.svg" alt="Menu" />
+            </button>
+            <div class="pc">
+              <ul class="nav-list-0">
+                <li class="nav-item-0">
+                  <a href="#" title="About">About</a>
+                </li>
+                <li class="nav-item-0">
+                  <a href="#" title="room & suites"
+                    >room & suites
+                    <div class="icon">
+                      <img
+                        src="./assets/images/caret-down.svg"
+                        alt="Icon"
+                      /></div
+                  ></a>
+                  <ul class="nav-list-1">
+                    <li class="li nav-item-1">
+                      <a href="#" title="Kim Nguu branch">Kim Nguu branch</a>
+                      <ul class="nav-list-2">
+                        <li class="nav-item-2">
+                          <a href="#" title="S class suites">S class suites</a>
+                        </li>
+                        <li class="nav-item-2">
+                          <a href="#" title="A class suites">A class suites</a>
+                        </li>
+                        <li class="nav-item-2">
+                          <a href="#" title="B class suites">B class suites</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="li nav-item-1">
+                      <a href="#" title="Tran Khat Chan branch"
+                        >Tran Khat Chan branch</a
+                      >
+                      <ul class="nav-list-2">
+                        <li class="nav-item-2">
+                          <a href="#" title="S class suites">S class suites</a>
+                        </li>
+                        <li class="nav-item-2">
+                          <a href="#" title="A class suites">A class suites</a>
+                        </li>
+                        <li class="nav-item-2">
+                          <a href="#" title="B class suites">B class suites</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="li nav-item-1">
+                      <a href="#" title="Hoan Kiem branch">Hoan Kiem branch</a>
+                      <ul class="nav-list-2">
+                        <li class="nav-item-2">
+                          <a href="#" title="S class suites">S class suites</a>
+                        </li>
+                        <li class="nav-item-2">
+                          <a href="#" title="A class suites">A class suites</a>
+                        </li>
+                        <li class="nav-item-2">
+                          <a href="#" title="B class suites">B class suites</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item-0">
+                  <a href="#" title="news"
+                    >news
+                    <div class="icon">
+                      <img src="./assets/images/caret-down.svg" alt="Icon" />
+                    </div>
+                  </a>
+                  <ul class="nav-list-1">
+                    <li class="li nav-item-1">
+                      <a href="#" title="Love secret">Love secret</a>
+                    </li>
+                    <li class="li nav-item-1">
+                      <a href="#" title="trends and inspiration"
+                        >trends and inspiration
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item-0">
+                  <a href="#" title="products"
+                    >products
+                    <div class="icon">
+                      <img
+                        src="./assets/images/caret-down.svg"
+                        alt="Icon"
+                      /></div
+                  ></a>
+
+                  <ul class="nav-list-1">
+                    <li class="li nav-item-1">
+                      <a href="#" title="Toy">Toy</a>
+                    </li>
+                    <li class="li nav-item-1">
+                      <a href="#" title="Gel">Gel </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item-0">
+                  <a href="#" title="booking">booking</a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="offcanvas offcanvas-start mb"
+              tabindex="-1"
+              id="mobile-menu"
+            >
+              <div class="nav-header">
+                <a href="#" title="Jacayl" class="logo">
+                  <img src="./assets/images/logo-black.svg" alt="Logo" />
+                </a>
+                <button
+                  type="button"
+                  class="btn close-btn"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                >
+                  <img src="./assets/images/close.svg" alt="Close" />
+                </button>
+              </div>
+              <ul class="nav-list-0">
+                <li class="nav-item-0">
+                  <div class="link-wrapper">
+                    <a href="#" title="About">About</a>
+                  </div>
+                </li>
+                <li class="nav-item-0">
+                  <div class="link-wrapper">
+                    <a href="#" title="room & suites">room & suites </a>
+                    <div
+                      class="icon"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#nav-list-1-1"
+                      aria-expanded="false"
+                      aria-controls="nav-list-1-1"
+                    >
+                      <img src="./assets/images/caret-down.svg" alt="Icon" />
+                    </div>
+                  </div>
+
+                  <ul class="nav-list-1 collapse" id="nav-list-1-1">
+                    <li class="li nav-item-1">
+                      <div class="link-wrapper">
+                        <a href="#" title="Kim Nguu branch">Kim Nguu branch </a>
+                        <div
+                          class="icon"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#nav-list-2-1"
+                          aria-expanded="false"
+                          aria-controls="nav-list-2-1"
+                        >
+                          <img
+                            src="./assets/images/caret-down.svg"
+                            alt="Icon"
+                          />
+                        </div>
+                      </div>
+
+                      <ul class="nav-list-2 collapse" id="nav-list-2-1">
+                        <li class="nav-item-2">
+                          <a href="#" title="S class suites">S class suites</a>
+                        </li>
+                        <li class="nav-item-2">
+                          <a href="#" title="A class suites">A class suites</a>
+                        </li>
+                        <li class="nav-item-2">
+                          <a href="#" title="B class suites">B class suites</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="li nav-item-1">
+                      <div class="link-wrapper">
+                        <a href="#" title="Kim Nguu branch">Kim Nguu branch </a>
+                        <div
+                          class="icon"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#nav-list-2-2"
+                          aria-expanded="false"
+                          aria-controls="nav-list-2-2"
+                        >
+                          <img
+                            src="./assets/images/caret-down.svg"
+                            alt="Icon"
+                          />
+                        </div>
+                      </div>
+
+                      <ul class="nav-list-2 collapse" id="nav-list-2-2">
+                        <li class="nav-item-2">
+                          <a href="#" title="S class suites">S class suites</a>
+                        </li>
+                        <li class="nav-item-2">
+                          <a href="#" title="A class suites">A class suites</a>
+                        </li>
+                        <li class="nav-item-2">
+                          <a href="#" title="B class suites">B class suites</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="li nav-item-1">
+                      <div class="link-wrapper">
+                        <a href="#" title="Kim Nguu branch">Kim Nguu branch </a>
+                        <div
+                          class="icon"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#nav-list-2-3"
+                          aria-expanded="false"
+                          aria-controls="nav-list-2-3"
+                        >
+                          <img
+                            src="./assets/images/caret-down.svg"
+                            alt="Icon"
+                          />
+                        </div>
+                      </div>
+
+                      <ul class="nav-list-2 collapse" id="nav-list-2-3">
+                        <li class="nav-item-2">
+                          <a href="#" title="S class suites">S class suites</a>
+                        </li>
+                        <li class="nav-item-2">
+                          <a href="#" title="A class suites">A class suites</a>
+                        </li>
+                        <li class="nav-item-2">
+                          <a href="#" title="B class suites">B class suites</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item-0">
+                  <div class="link-wrapper">
+                    <a href="#" title="news">news </a>
+                    <div
+                      class="icon"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#nav-list-1-2"
+                      aria-expanded="false"
+                      aria-controls="nav-list-1-2"
+                    >
+                      <img src="./assets/images/caret-down.svg" alt="Icon" />
+                    </div>
+                  </div>
+
+                  <ul class="nav-list-1 collapse" id="nav-list-1-2">
+                    <li class="li nav-item-1">
+                      <div class="link-wrapper">
+                        <a href="#" title="Love secret">Love secret</a>
+                      </div>
+                    </li>
+                    <li class="li nav-item-1">
+                      <div class="link-wrapper">
+                        <a href="#" title="trends and inspiration"
+                          >trends and inspiration
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item-0">
+                  <div class="link-wrapper">
+                    <a href="#" title="products">products </a>
+                  </div>
+                </li>
+                <li class="nav-item-0">
+                  <div class="link-wrapper">
+                    <a href="#" title="booking">booking</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="banner">
+        <div class="banner-image">
+          <img src="./assets/images/banner-slide-3.jpg" alt="Banner" />
+        </div>
+        <div class="banner-content">
+          <div class="container">
+            <div class="heading-block center">
+              <span class="badge"> Product list </span>
+              <h1 class="title">Product List</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="product">
+        <div class="container">
+          <div class="heading-block center">
+            <span class="badge"> Discover our best product </span>
+            <h2 class="title">
+              Here's Our Best <br />
+              Premium Product
+            </h2>
+            <p class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+              repudiandae distinctio iusto labore expedita ipsam suscipit nisi!
+              Architecto, odit! Facere quam pariatur unde reprehenderit nulla
+              quaerat obcaecati nemo molestiae assumenda.
+            </p>
+          </div>
+          <div class="product-tab">
+            <a href="#" title="All" class="product-tab-item active">
+              <div class="icon"></div>
+              <span class="text"> All </span>
+            </a>
+            <a href="#" title="Toy" class="product-tab-item">
+              <div class="icon"></div>
+              <span class="text"> Toy </span>
+            </a>
+            <a href="#" title="Gel" class="product-tab-item">
+              <div class="icon"></div>
+              <span class="text"> Gel </span>
+            </a>
+          </div>
+          <div class="product-group">
+            <div class="product-item">
+              <div class="image">
+                <img src="./assets/images/product-1.webp" alt="Product" />
+              </div>
+              <div class="content">
+                <p class="price"><span class="number">200$</span></p>
+                <span class="badge">Decor</span>
+                <a href="#" title="Scented candles" class="title"
+                  >Scented candles</a
+                >
+                <p class="desc">
+                  Spacious, bright guestrooms with tasteful furnishing, wooden
+                  floor and panoramic windows from the ceiling to the floor.
+                </p>
+                <div class="btn-wrapper">
+                  <a href="#" title="Detail" class="btn detail-btn"
+                    >Detail
+                    <div class="icon">
+                      <img
+                        src="./assets/images/arrow-right-black.svg"
+                        alt="icon"
+                      />
+                    </div>
+                  </a>
+                  <a href="#" title="Buy Now" class="btn btn-brown">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="image">
+                <img src="./assets/images/product-2.webp" alt="Product" />
+              </div>
+              <div class="content">
+                <p class="price"><span class="number">200$</span></p>
+                <span class="badge">Decor</span>
+                <a href="#" title="Scented candles" class="title"
+                  >Scented candles</a
+                >
+                <p class="desc">
+                  Spacious, bright guestrooms with tasteful furnishing, wooden
+                  floor and panoramic windows from the ceiling to the floor.
+                </p>
+                <div class="btn-wrapper">
+                  <a href="#" title="Detail" class="btn detail-btn"
+                    >Detail
+                    <div class="icon">
+                      <img
+                        src="./assets/images/arrow-right-black.svg"
+                        alt="icon"
+                      />
+                    </div>
+                  </a>
+                  <a href="#" title="Buy Now" class="btn btn-brown">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="image">
+                <img src="./assets/images/product-3.jpeg" alt="Product" />
+              </div>
+              <div class="content">
+                <p class="price"><span class="number">200$</span></p>
+                <span class="badge">Decor</span>
+                <a href="#" title="Scented candles" class="title"
+                  >Scented candles</a
+                >
+                <p class="desc">
+                  Spacious, bright guestrooms with tasteful furnishing, wooden
+                  floor and panoramic windows from the ceiling to the floor.
+                </p>
+                <div class="btn-wrapper">
+                  <a href="#" title="Detail" class="btn detail-btn"
+                    >Detail
+                    <div class="icon">
+                      <img
+                        src="./assets/images/arrow-right-black.svg"
+                        alt="icon"
+                      />
+                    </div>
+                  </a>
+                  <a href="#" title="Buy Now" class="btn btn-brown">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="image">
+                <img src="./assets/images/product-4.webp" alt="Product" />
+              </div>
+              <div class="content">
+                <p class="price"><span class="number">200$</span></p>
+                <span class="badge">Decor</span>
+                <a href="#" title="Scented candles" class="title"
+                  >Scented candles</a
+                >
+                <p class="desc">
+                  Spacious, bright guestrooms with tasteful furnishing, wooden
+                  floor and panoramic windows from the ceiling to the floor.
+                </p>
+                <div class="btn-wrapper">
+                  <a href="#" title="Detail" class="btn detail-btn"
+                    >Detail
+                    <div class="icon">
+                      <img
+                        src="./assets/images/arrow-right-black.svg"
+                        alt="icon"
+                      />
+                    </div>
+                  </a>
+                  <a href="#" title="Buy Now" class="btn btn-brown">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="image">
+                <img src="./assets/images/product-1.webp" alt="Product" />
+              </div>
+              <div class="content">
+                <p class="price"><span class="number">200$</span></p>
+                <span class="badge">Decor</span>
+                <a href="#" title="Scented candles" class="title"
+                  >Scented candles</a
+                >
+                <p class="desc">
+                  Spacious, bright guestrooms with tasteful furnishing, wooden
+                  floor and panoramic windows from the ceiling to the floor.
+                </p>
+                <div class="btn-wrapper">
+                  <a href="#" title="Detail" class="btn detail-btn"
+                    >Detail
+                    <div class="icon">
+                      <img
+                        src="./assets/images/arrow-right-black.svg"
+                        alt="icon"
+                      />
+                    </div>
+                  </a>
+                  <a href="#" title="Buy Now" class="btn btn-brown">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="image">
+                <img src="./assets/images/product-2.webp" alt="Product" />
+              </div>
+              <div class="content">
+                <p class="price"><span class="number">200$</span></p>
+                <span class="badge">Decor</span>
+                <a href="#" title="Scented candles" class="title"
+                  >Scented candles</a
+                >
+                <p class="desc">
+                  Spacious, bright guestrooms with tasteful furnishing, wooden
+                  floor and panoramic windows from the ceiling to the floor.
+                </p>
+                <div class="btn-wrapper">
+                  <a href="#" title="Detail" class="btn detail-btn"
+                    >Detail
+                    <div class="icon">
+                      <img
+                        src="./assets/images/arrow-right-black.svg"
+                        alt="icon"
+                      />
+                    </div>
+                  </a>
+                  <a href="#" title="Buy Now" class="btn btn-brown">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagination">
+            <a href="#" title="Back" class="btn prev-btn">Back</a>
+            <div class="page-wrapper">
+              <a href="#" title="1" class="page active">1</a>
+              <a href="#" title="2" class="page">2</a>
+              <a href="#" title="3" class="page">3</a>
+              <a href="#" title="4" class="page">4</a>
+              <span class="etc">...</span>
+              <a href="#" title="20" class="page">20</a>
+              <a href="#" title="21" class="page">21</a>
+              <a href="#" title="22" class="page">22</a>
+            </div>
+            <a href="#" title="Next" class="btn next-btn">Next</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-content">
+            <a href="#" title="Jacayl" class="logo">
+              <img src="./assets/images/logo-white.svg" alt="Logo" />
+            </a>
+            <p class="text">
+              Welcome to the best five-star deluxe hotel in New York. Hotel
+              elementum sesue the aucan vestibulum aliquam justo in sapien
+              rutrum volutpat.
+            </p>
+          </div>
+          <div class="footer-link-container">
+            <h3 class="title">Explore</h3>
+            <ul class="footer-link-list">
+              <li class="footer-link-item">
+                <div class="icon"></div>
+                <a href="#" title="Home">Home</a>
+              </li>
+              <li class="footer-link-item">
+                <div class="icon"></div>
+                <a href="#" title="About">About</a>
+              </li>
+              <li class="footer-link-item">
+                <div class="icon"></div>
+                <a href="#" title="News">News</a>
+              </li>
+              <li class="footer-link-item">
+                <div class="icon"></div>
+                <a href="#" title="Contact">Contact</a>
+              </li>
+              <li class="footer-link-item">
+                <div class="icon"></div>
+                <a href="#" title="Booking">Booking</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-link-container">
+            <h3 class="title">Room & Suites</h3>
+            <ul class="footer-link-list">
+              <li class="footer-link-item">
+                <div class="icon"></div>
+                <a href="#" title="Junior Room">Junior Room</a>
+              </li>
+              <li class="footer-link-item">
+                <div class="icon"></div>
+                <a href="#" title="Family Room">Family Room</a>
+              </li>
+              <li class="footer-link-item">
+                <div class="icon"></div>
+                <a href="#" title="Double Room">Double Room</a>
+              </li>
+              <li class="footer-link-item">
+                <div class="icon"></div>
+                <a href="#" title="Deluxe Room">Deluxe Room</a>
+              </li>
+              <li class="footer-link-item">
+                <div class="icon"></div>
+                <a href="#" title="Superior Room">Superior Room</a>
+              </li>
+              <li class="footer-link-item">
+                <div class="icon"></div>
+                <a href="#" title="King Suite">King Suite</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-link-container">
+            <h3 class="title">Channels</h3>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a href="#" title="Facebook">
+                  <img src="./assets/images/facebook.svg" alt="Facebook" />
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="#" title="Instagram">
+                  <img src="./assets/images/instagram.svg" alt="Instagram" />
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="#" title="Youtube">
+                  <img src="./assets/images/youtube.svg" alt="Youtube" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="copyright">© Copyright 2024 by Jacayl</p>
+      </div>
+    </footer>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/swiper.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
